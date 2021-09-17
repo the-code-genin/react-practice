@@ -1,16 +1,24 @@
 import moment from "moment";
 import { Component } from "react";
 
-interface State {
+export interface Props {
+    // Empty
+}
+
+export interface State {
     date: moment.Moment
 }
 
-export default class Clock extends Component {
-    public state: State;
+export default class Clock extends Component<Props, State> {
+    public props: Readonly<Props>;
+    public state: Readonly<State>;
     protected interval: NodeJS.Timer | null;
 
-    constructor(props: any) {
+    constructor(props: Props) {
         super(props);
+
+        // Initialize props
+        this.props = props;
 
         // Initialize state
         this.state = {
@@ -19,6 +27,9 @@ export default class Clock extends Component {
 
         // Set interval to null
         this.interval = null;
+
+        // Initialize controller methods
+        this.tick = this.tick.bind(this);
     }
 
     componentDidMount() {
