@@ -14,7 +14,7 @@ export default class Clock extends Component {
 
         // Initialize state
         this.state = {
-            date: moment()
+            date: moment().local()
         }
 
         // Set interval to null
@@ -31,13 +31,13 @@ export default class Clock extends Component {
 
     tick() {
         this.setState({
-            date: moment()
+            date: moment().local()
         });
     }
 
     render() {
         return (
-            <p>Current Date: {this.state.date.format("YYYY-MM-DD HH:MM:ss")}</p>
+            <p>Current Date: {this.state.date.format("YYYY-MM-DD HH:mm:ss")}</p>
         );
     }
 }
