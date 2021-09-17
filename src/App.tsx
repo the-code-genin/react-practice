@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import Clock from './Clock';
+import Clock from './components/Clock';
 
 export interface Props {
   appName?: string
