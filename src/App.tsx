@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
+import Clock from './Clock';
 
 export interface Props {
   appName?: string
@@ -13,7 +14,7 @@ export default class App extends Component {
     super(props);
 
     // Initialize props
-    this.props = props
+    this.props = props;
   }
 
   render() {
@@ -22,6 +23,8 @@ export default class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>{this.props.appName}</p>
+
+          <Clock />
         </header>
       </div>
     );
