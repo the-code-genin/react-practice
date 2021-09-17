@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App appName="The Start Of A New Era" />
   </React.StrictMode>,
   document.getElementById('root')
 );
