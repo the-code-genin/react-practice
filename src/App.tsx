@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 import Clock from './components/Clock';
+import LikeBar from './components/LikeBar';
 
 export interface Props {
   appName?: string
@@ -25,6 +26,8 @@ export default class App extends Component {
           <p>{this.props.appName}</p>
 
           <Clock />
+
+          <LikeBar />
         </header>
       </div>
     );
