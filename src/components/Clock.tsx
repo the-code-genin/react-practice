@@ -1,7 +1,7 @@
 import moment from "moment";
 import { Component } from "react";
 
-export interface State {
+interface State {
     date: moment.Moment
 }
 
