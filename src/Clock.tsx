@@ -30,10 +30,8 @@ export default class Clock extends Component {
     }
 
     tick() {
-        this.setState((state: State, props: any): Partial<State> => {
-            return {
-                date: moment()
-            }
+        this.setState({
+            date: moment()
         });
     }
 
