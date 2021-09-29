@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./style.css";
+import "../assets/css/style.css";
 
 export interface Props {
     // Empty
