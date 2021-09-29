@@ -1,31 +1,12 @@
 import React from "react";
 import "../assets/css/style.css";
-
-export interface Props {
-  // Empty
-}
-
-export interface State {
-  // Empty
-}
+import Navbar from "../components/Navbar";
 
 export default class About extends React.Component {
-  public props: Readonly<Props>;
-  public state: Readonly<State>;
-
-  constructor(props: Props) {
-    super(props);
-
-    this.props = props;
-
-    this.state = {
-
-    };
-  }
-
   render() {
     return (
       <div className="container">
+        <Navbar />
         <h1>About</h1>
       </div>
     );
