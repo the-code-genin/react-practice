@@ -1,5 +1,5 @@
 import { BrowserRouter, Route } from "react-router-dom";
-import ABout from "../pages/About";
+import About from "../pages/About";
 import Home from "../pages/Home";
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
             </Route>
 
             <Route path="/about">
-                <ABout />
+                <About />
             </Route>
         </BrowserRouter>
     )

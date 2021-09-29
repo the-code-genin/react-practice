@@ -9,7 +9,7 @@ export interface State {
   // Empty
 }
 
-export default class ABout extends React.Component {
+export default class About extends React.Component {
   public props: Readonly<Props>;
   public state: Readonly<State>;
 
