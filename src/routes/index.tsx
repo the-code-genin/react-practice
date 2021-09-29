@@ -1,10 +1,10 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import About from "../pages/About";
 import Home from "../pages/Home";
 
 export default () => {
     return (
-        <BrowserRouter>
+        <Switch>
             <Route path="/">
                 <Home />
             </Route>
@@ -12,6 +12,6 @@ export default () => {
             <Route path="/about">
                 <About />
             </Route>
-        </BrowserRouter>
+        </Switch>
     )
 }
