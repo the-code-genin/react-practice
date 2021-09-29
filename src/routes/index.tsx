@@ -1,19 +1,20 @@
+import React from "react";
 import { Route, Switch } from "react-router-dom";
 import About from "../pages/About";
 import Home from "../pages/Home";
 
-const Routes = () => {
-    return (
-        <Switch>
-            <Route path="/">
-                <Home />
-            </Route>
-
-            <Route path="/about">
-                <About />
-            </Route>
-        </Switch>
-    )
-};
-
-export default Routes;
+export default class Routes extends React.Component {
+    render() {
+        return (
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+    
+                <Route path="/about">
+                    <About />
+                </Route>
+            </Switch>
+        );
+    }
+}
