@@ -1,35 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 import { Component } from 'react';
-import Clock from './components/Clock';
-import LikeBar from './components/LikeBar';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from "./routes";
 
 export interface Props {
-  appName?: string
+  //
+};
+
+export interface State {
+  //
 };
 
 export default class App extends Component {
-  public props: Props;
+  public props: Readonly<Props>;
+  public state: Readonly<State>;
 
   constructor(props: Props) {
     super(props);
 
-    // Initialize props
     this.props = props;
+
+    this.state = {
+
+    };
   }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{this.props.appName}</p>
-
-          <Clock />
-
-          <LikeBar />
-        </header>
-      </div>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     );
   }
 }
