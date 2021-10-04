@@ -5,7 +5,7 @@ import "../assets/css/style.css";
 export default class Navbar extends React.Component {
     render() {
         return (
-            <div>
+            <div className="d-flex">
                 <Link to="/">Home</Link>
 
                 <Link to="/about">About</Link>
