@@ -1,9 +1,11 @@
 [
     {
+        "slug": "lord-of-the-rings",
         "name": "Lord of The Rings",
         "description": "A hobbit takes a ring to mount doom."
     },
     {
+        "slug": "the-matrix",
         "name": "The Matrix",
         "description": "Red or Blue pill"
     }
