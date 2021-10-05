@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 export default class Home extends React.Component {
   buildMovies() {
-    return movies.map(movie => {
+    return movies.map((movie, index) => {
       const link = `/movies/${movie.slug}`;
       return (
-        <Link to={link}>
+        <Link key={index} to={link}>
           <h1>{movie.name}</h1>
           <p>{movie.description}</p>
         </Link>
