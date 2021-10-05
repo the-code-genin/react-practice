@@ -8,6 +8,8 @@ export default class NotFound extends React.Component {
       <div className="container">
         <Navbar />
         <h1>404 - Not Found</h1>
+
+        <p>The page you were looking for was not found on this server.</p>
       </div>
     );
   }
