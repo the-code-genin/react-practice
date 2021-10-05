@@ -11,8 +11,8 @@ interface State {
 };
 
 export default class LikeBar extends Component<Props, State> {
-    public props: Readonly<Props>;
-    public state: Readonly<State>;
+    public readonly props: Props;
+    public readonly state: State;
 
     constructor(props: Props) {
         super(props);

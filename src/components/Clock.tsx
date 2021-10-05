@@ -10,8 +10,8 @@ export interface State {
 }
 
 export default class Clock extends Component<Props, State> {
-    public props: Readonly<Props>;
-    public state: Readonly<State>;
+    public readonly props: Props;
+    public readonly state: State;
     protected interval: NodeJS.Timer | null;
 
     constructor(props: Props) {
